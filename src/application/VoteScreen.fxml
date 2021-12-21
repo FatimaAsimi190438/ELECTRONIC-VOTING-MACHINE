@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="application.SampleController">
+   <center>
+      <BorderPane prefHeight="473.0" prefWidth="383.0" BorderPane.alignment="CENTER">
+         <center>
+            <AnchorPane prefHeight="496.0" prefWidth="383.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="pti" layoutX="256.0" layoutY="290.0" mnemonicParsing="false" onAction="#ptibutton" prefHeight="109.0" prefWidth="98.0" />
+                  <Button fx:id="plmn" layoutX="143.0" layoutY="290.0" mnemonicParsing="false" onAction="#plmnbutton" prefHeight="109.0" prefWidth="98.0" />
+                  <Button fx:id="ppp" layoutX="27.0" layoutY="290.0" mnemonicParsing="false" onAction="#PPPbutton" prefHeight="109.0" prefWidth="98.0" />
+                  <ImageView fitHeight="110.0" fitWidth="99.0" layoutX="27.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../OneDrive/Desktop/Arrow_PPP_symbol.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="98.0" layoutX="143.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../OneDrive/Desktop/1280px-Pml-n.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="139.0" fitWidth="96.0" layoutX="257.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../OneDrive/Desktop/5b4df20f3eafc.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="96.0" layoutY="44.0" text="CAST YOUR VOTE">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="56.0" layoutY="157.0" text="Name:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="58.0" layoutY="216.0" text="CNIC:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="vname" layoutX="118.0" layoutY="155.0" onAction="#votername" promptText="name" />
+                  <TextField fx:id="vcnic" layoutX="117.0" layoutY="214.0" onAction="#votercnic" promptText="CNIC" />
+                  <Label layoutX="56.0" layoutY="414.0" text="PPP">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="171.0" layoutY="414.0" text="PML-N">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="295.0" layoutY="414.0" text="PTI">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="done" layoutX="148.0" layoutY="446.0" mnemonicParsing="false" onAction="#donebutton" prefHeight="45.0" prefWidth="87.0" text="DONE" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>
